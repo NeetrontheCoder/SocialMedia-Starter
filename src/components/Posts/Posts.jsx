@@ -4,8 +4,10 @@ import {PostsData} from '../../data/PostsData'
 
 const Posts = () => {
   return (
-      <div className="posts">
-          
+      <div className="Posts">
+      {PostsData.map((post, id) => {
+        return <Post />
+            })}
     </div>
   )
 }
