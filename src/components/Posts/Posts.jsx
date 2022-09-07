@@ -1,6 +1,6 @@
 import React from 'react'
 import './Posts.css'
-import {PostsData} from '../../data/PostsData'
+import {PostsData} from '../../Data/PostsData'
 
 const Posts = () => {
   return (
