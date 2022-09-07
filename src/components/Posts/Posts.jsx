@@ -5,8 +5,8 @@ import {PostsData} from '../../data/PostsData'
 const Posts = () => {
   return (
       <div className="Posts">
-      {PostsData.map((post, id) => {
-        return <Post />
+      {PostsData.map((post,id) => {
+        return <Posts/>
             })}
     </div>
   )

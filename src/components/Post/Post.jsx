@@ -2,10 +2,10 @@ import React from 'react'
 import './Post.css'
 
 
-const post = () => {
+const Post = () => {
   return (
     <div>post</div>
   )
 }
 
-export default post
+export default Post
