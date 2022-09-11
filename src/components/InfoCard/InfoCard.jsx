@@ -1,7 +1,7 @@
 import React from 'react'
 import './InfoCard.css'
 import { UilPen } from '@iconscout/react-unicons'
-import ProfileModel from '../ProfileModel/ProfileModel'
+import ProfileModal from '../ProfileModal/ProfileModal'
 
 const InfoCard = () => {
 
@@ -13,7 +13,7 @@ const InfoCard = () => {
         <h4>Your Info</h4>
         <div>
           <UilPen width="2rem" height="1.2rem" onClick={() => setModalOpened(true)} />
-          <ProfileModel opened={modalOpened} onClose={() => setModalOpened(false)} />
+          <ProfileModal modalOpened = {modalOpened} setModalOpened = {setModalOpened}  />
         </div>
       </div>
 
