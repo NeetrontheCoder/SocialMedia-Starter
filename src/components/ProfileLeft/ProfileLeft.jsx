@@ -4,11 +4,15 @@ import InfoCard from '../InfoCard/InfoCard'
 import FollowersCard from '../FollowersCard/FollowersCard' 
 
 
+
 const ProfileLeft = () => {
   return (
     <div className="ProfileSide">
+      {/* Logo and explorebar */}
       <LogoSearch />
+      {/* Profile card */}
       <InfoCard />
+      {/* Followers card */}
       <FollowersCard />
     </div>
   );

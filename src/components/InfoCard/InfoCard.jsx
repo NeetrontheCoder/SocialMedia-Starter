@@ -5,13 +5,14 @@ import ProfileModal from '../ProfileModal/ProfileModal.jsx';
 
 const InfoCard = () => {
 
-
+      // usestate for profilemodal
     const [modalOpened, setModalOpened] = useState(false)
   return (
     <div className="InfoCard">
       <div className="infoHead">
         <h4>Your Info</h4>
         <div>
+          {/* clicking pen will fire the function and set modalOpened to true */}
           <UilPen width="2rem" height="1.2rem" onClick={() => setModalOpened(true)} />
           <ProfileModal modalOpened = {modalOpened} setModalOpened = {setModalOpened}  />
         </div>
