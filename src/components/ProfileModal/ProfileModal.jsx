@@ -14,7 +14,8 @@ function ProfileModal({ modalOpened, setModalOpened }) {
       overlayBlur={3}
       size="55%"
       opened={modalOpened}
-      onClose={() => setModalOpened(false)}>
+      onClose={() => setModalOpened(false)}
+    >
       <form className="infoForm">
         <h3>Your info</h3>
 
@@ -25,6 +26,7 @@ function ProfileModal({ modalOpened, setModalOpened }) {
             name="FirstName"
             placeholder="First Name"
           />
+
           <input
             type="text"
             className="infoInput"
@@ -32,21 +34,24 @@ function ProfileModal({ modalOpened, setModalOpened }) {
             placeholder="Last Name"
           />
         </div>
+
         <div>
           <input
             type="text"
             className="infoInput"
-            name="WorksAT"
-            placeholder="Works At"
+            name="worksAT"
+            placeholder="Works at"
           />
         </div>
+
         <div>
           <input
             type="text"
             className="infoInput"
-            name="LivesIN"
-            placeholder="Lives In"
+            name="livesIN"
+            placeholder="LIves in"
           />
+
           <input
             type="text"
             className="infoInput"
@@ -54,22 +59,23 @@ function ProfileModal({ modalOpened, setModalOpened }) {
             placeholder="Country"
           />
         </div>
+
         <div>
           <input
             type="text"
             className="infoInput"
-            name="RelationshipStatus"
-            placeholder="Relationship Status"
+            placeholder="RelationShip Status"
           />
         </div>
-          <div>
-            Profile Picture
-              <input type="file" name="profileImg" />
-            Cover Image
-              <input type="file" name="coverImg" />
-          </div>
 
-            <button className="button infoButton">Update</button>
+        <div>
+          Profile Image
+          <input type="file" name="profileImg" />
+          Cover Image
+          <input type="file" name="coverImg" />
+        </div>
+
+        <button className="button infoButton">Update</button>
       </form>
     </Modal>
   );
