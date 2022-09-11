@@ -6,7 +6,7 @@ import ProfileModal from '../ProfileModal/ProfileModal'
 const InfoCard = () => {
 
 
-    const [modalOpened, setModalOpened] = React.useState(false)
+    const [modalOpened, setModalOpened] = useState(false)
   return (
     <div className="InfoCard">
       <div className="infoHead">
